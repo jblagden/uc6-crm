@@ -5,6 +5,6 @@ Rails.application.routes.draw do
 
   get 'missing_email' => 'finder#missing_email', as: 'missing_email'
 
-  resources :customers
+  resources :customers, except: [:index]
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 end
