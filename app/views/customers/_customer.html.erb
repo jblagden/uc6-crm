@@ -9,6 +9,13 @@
   </p>
   <% end %>
 
+  <% if customer.province.present? %>
+  <p>
+    <strong>Province:</strong>
+    <%= customer.province.name %>
+  </p>
+  <% end %>
+
   <p>
     <strong>Phone number:</strong>
     <%= customer.phone_number %>

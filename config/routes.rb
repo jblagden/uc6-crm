@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :provinces
   root to: 'finder#index'
 
   get 'alphabetized' => 'finder#alphabetized', as: 'alphabetized'
